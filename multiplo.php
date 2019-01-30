@@ -15,7 +15,10 @@ if(isset($_POST["comprobar"])){
 }
 
 function comprobar($dividendo, $divisor) {
-	if($divisor !== 0){
+	if($divisor == 0){
+        	return " NO ES multiplo de ";
+    	}
+    	else{
 		if ($dividendo % $divisor == 0) {
 			return " ES multiplo de ";
 		} else {
