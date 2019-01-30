@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Multiplo</title>
+		<meta name="description" content="" />
+		<meta name="author" content="rafa" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	</head>
+	<body>
+
+		<p>
+			Veamos si un número es múltiplo de otro.<br>
+			<input type="number" id="numero1"> <span id="demo"></span> múltiplo de <input type="number" id="numero2">
+		</p>
+		<p>
+			<button onclick="comprobar()">Comprobar</button>
+		</p>
+    
+		<script>
+			function comprobar() {
+				var numero1 = document.getElementById("numero1").value;
+        		var numero2 = document.getElementById("numero2").value;
+				var texto = '';
+			  	if (numero1 % numero2 == 0) {
+					texto = "ES";
+				} else {
+					texto = "NO ES";
+				}
+			  	document.getElementById("demo").innerHTML = texto;
+			}
+		</script>
+
+	</body>
+</html>
