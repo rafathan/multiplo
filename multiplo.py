@@ -4,11 +4,11 @@ def comprobar():
 	b = raw_input("dame otro numero y te dire si el primero es multiplo del segundo: ")
 	try:
 		if int(a) % int(b) == 0:
-			print a + " es multiplo de " + b
+			print (a + " es multiplo de " + b)
 		else:
-			print a + " no es multiplo de " + b
+			print (a + " no es multiplo de " + b)
 	except:
-		print"No has introducido dos numeros"
+		print("No has introducido dos numeros")
 comprobar()
 salir()
 def salir():
@@ -19,6 +19,6 @@ def salir():
 		if c == "2":
 			exit()
 		else:
-			print "Opcion no valida"
+			print ("Opcion no valida")
 salir()
 comprobar()
